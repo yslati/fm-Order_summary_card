@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display';
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background: #2193b0;
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+.background {
+    border-radius: 10px;
+    min-width: 400px;
+    width: 80%;
+    height: 600px;
+    margin: auto;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('../images/pattern-background-desktop.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+}
+
+.card {
+    width: 300px;
+    height: 540px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: auto;
+
+}
+
+.image {
+    height: 150px;
+    background-image: url('../images/illustration-hero.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.all-info {
+    height: 350px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+
+.info {
+    height: 100px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.info h2 {
+    color: hsl(223, 47%, 23%);
+    margin-bottom: 20px;
+}
+
+.info p {
+    font-weight: 400;
+    color: hsl(224, 23%, 55%);
+    line-height: 1.6;
+    padding: 0 50px;
+}
+
+.plan {
+    height: 80px;
+    width: 80%;
+    background-color: hsl(225, 100%, 98%);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    padding: 0 12px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+
+.plan--icon {
+    margin: auto 0;
+    width: 50px;
+    height: 50px;
+    background-image: url('../images/icon-music.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.plan--text {
+    margin: auto 0;
+}
+
+.plan--text h4 {
+    color: hsl(223, 47%, 23%);
+}
+
+.plan--text p {
+    color: hsl(224, 23%, 55%);
+}
+
+.plan--change {
+	margin: auto 0;
+	font-weight: 700;
+}
+
+.buttons {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.pay {
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0px 14px 28px, hsl(225, 100%, 98%) 0px 25px 10px;
+}
+
+.cancel {
+    color: hsl(224, 23%, 55%);
+    background-color: transparent;
+}
+
+@media (max-width: 375px) {
+	.background {
+		background-image: url('../images/pattern-background-mobile.svg');
+		width: 100vw;
+		height: 100vh;
+		border-radius: 0;
+		margin: 0;
+	}
+	.card {
+		width: 85%;
+	}
+}
